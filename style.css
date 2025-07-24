@@ -4,6 +4,9 @@
   --ulearn-purple: #4d3f71;
   --ulearn-green: #1aa8ab;
   --ulearn-light-blue: #e6f0f0;
+  --ulearn-white: #fbfbfb;
+  --ulearn-sky-blue: #E8F2F2;
+  --ulearn-placeholder-grey: #7b7b7b;
 }
 
 /* CSS RESET STYLES */
@@ -28,6 +31,7 @@ html {
 }
 body {
   font-size: 1.8rem;
+  background-color: var(--ulearn-white);
 }
 img {
   width: 100%;
@@ -81,7 +85,7 @@ nav a {
   border: 3px solid var(--ulearn-purple);
   color: var(--ulearn-purple);
 }
-.auth-btns#sign-up {
+.auth-btns.green-bg-btn {
   background-color: var(--ulearn-green);
   color: #fff;
 }
@@ -129,4 +133,184 @@ nav a {
 }
 #hero-Imgctn {
   width: 58.2rem;
+}
+#special-text{
+  position: relative;
+}
+#special-text::after{
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background: var(--ulearn-purple);
+  z-index: -2;
+}
+
+/* LEARNING SECTION STYLING */
+#learning-program{
+  padding: 6rem 0;
+}
+#learning-program h2{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 500;
+}
+#learning-program > div{
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 6.3rem;
+  
+}
+.learning-cards{
+  width: 44.7rem;
+  text-align: center;
+}
+
+/* COURSES SECTION */
+#courses-section{
+  background-color: var(--ulearn-sky-blue);
+  padding: 5.5rem 0;
+}
+#top-ctn{
+  display: flex;
+}
+#top-ctn h2{
+  font-size: 5rem;
+  font-weight: 600;
+  width: 50%;
+}
+#top-img-ctn{
+  height: auto;
+  width: 63rem;
+}
+#top-img-ctn img{
+  width: 100%;
+  height: 100%;
+}
+#courses-section > div{
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+#bottom-ctn{
+  display: flex;
+  gap: 3rem;
+}
+.courses-card{
+  width: 29rem;
+}
+.courses-card > div{
+  height: 23.6rem;
+  position: relative;
+}
+.courses-card img{
+  height: 100%;
+}
+.courses-card > p{
+  margin-top: 2.2rem;
+}
+.courses-card button{
+  border: none;
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 17px;
+  right: 17px;
+}
+#arrow-ctn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+#arrow-ctn p{
+  color: var(--ulearn-green);
+  font-weight: 600;
+  font-size: 5rem;
+  border: 3px solid var(--ulearn-green);
+  width: 5.6rem;
+  height: 5.6rem;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTACT SECTION */
+#contact-section{
+  padding: 6rem 0;
+  background-color: var(--ulearn-white);
+}
+#contact-section h2{
+  text-transform: capitalize;
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+}
+#contact-section > div{
+  display: flex;
+  gap: 7.6rem;
+  margin-top: 4.8rem;
+}
+#contact-img-ctn img{
+  height: 100%;
+}
+#form-ctn{
+  width: 50%;
+}
+form{
+  border: 1px solid #D3DEE8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+    "fullName email"
+    "subject subject"
+    "comment comment"
+  ;
+  gap: 2rem;
+  padding: 4rem;
+  background: #fff;
+}
+.input-control{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+.input-control input, .input-control textarea{
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: 1px solid #D3DEE8;
+}
+.input-control input::placeholder, .input-control > textarea::placeholder{
+  font-family: "Poppins", sans-serif;
+  color: var(--ulearn-placeholder-grey);
+}
+.input-control textarea{
+  height: 21.4rem;
+}
+.input-control:nth-of-type(1){
+  grid-area: fullName;
+}
+.input-control:nth-of-type(2){
+  grid-area: email;
+}
+.input-control:nth-of-type(3){
+  grid-area: subject;
+}
+.input-control:nth-of-type(4){
+  grid-area: comment;
+}
+form button{
+  border: none;
+  font-size: 1.8rem;
+}
+
+/* FOOTER STYLING */
+footer{
+  background-color: var(--ulearn-purple);
+  color: #fff;
+  padding: 6.3rem 0 4rem;
 }
