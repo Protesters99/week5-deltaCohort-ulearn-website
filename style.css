@@ -36,6 +36,10 @@ body {
 img {
   width: 100%;
 }
+h2{
+  font-size: 5rem;
+  font-weight: 500;
+}
 .px-80 {
   padding-left: 8rem; /* 8 * 10px == 80px */
   padding-right: 8rem;
@@ -154,8 +158,6 @@ nav a {
 }
 #learning-program h2{
   text-align: center;
-  font-size: 5rem;
-  font-weight: 500;
 }
 #learning-program > div{
   display: flex;
@@ -178,8 +180,6 @@ nav a {
   display: flex;
 }
 #top-ctn h2{
-  font-size: 5rem;
-  font-weight: 600;
   width: 50%;
 }
 #top-img-ctn{
@@ -245,8 +245,6 @@ nav a {
 }
 #contact-section h2{
   text-transform: capitalize;
-  font-size: 5rem;
-  font-weight: 600;
   text-align: center;
 }
 #contact-section > div{
