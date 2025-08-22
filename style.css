@@ -68,6 +68,7 @@ nav {
   display: flex;
   gap: 9.3rem;
   align-items: center;
+  transition: all 1s;
 }
 nav > ul {
   display: flex;
@@ -312,3 +313,5 @@ footer{
   color: #fff;
   padding: 6.3rem 0 4rem;
 }
+
+/* Learning pagestyling */

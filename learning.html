@@ -6,33 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Univel Learning Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="learning.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
-    <header>
-        <div class="contain header-ctn">
-            <div id="logo-ctn">
-                <img src="images/logo.png" alt="ULearn Logo">
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="learning.html">Learning</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li>
-                        <a href="#">Review</a>
-                    </li>
-                </ul>
-
-                <div id="auth-ctn">
-                    <a href="" class="auth-btns" id="login">Login</a>
-                    <a href="" class="auth-btns" id="sign-up">Sign Up</a>
-                </div>
-            </nav>
+<header>
+      <div class="contain header-ctn">
+        <div id="logo-ctn">
+          <img src="images/logo.png" alt="ULearn Logo" />
         </div>
+
+        <div class="menu-icon-div">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li>
+              <a href="#">Review</a>
+            </li>
+          </ul>
+
+          <div id="auth-ctn">
+            <a href="" class="auth-btns" id="login">Login</a>
+            <a href="" class="auth-btns green-bg-btn">Sign Up</a>
+          </div>
+        </nav>
+
+        <div class="close-menu-icon-div">
+            <i class="fa-solid fa-times" id="close-icon"></i>
+        </div>
+         
+      </div>
     </header>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>

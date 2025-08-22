@@ -1,3 +1,11 @@
+.menu-icon-div, .close-menu-icon-div{
+  display: none;
+}
+#menu-icon, #close-icon{
+  font-size: 3rem;
+  color: var(--ulearn-green);
+}
+
 @media screen and (max-width: 1500px) {
   .contain {
     max-width: 100%;
@@ -51,6 +59,34 @@
 @media screen and (max-width: 1130px) {
   #hero-textCtn h1 {
     font-size: 6rem;
+  }
+  header{
+    padding: 0;
+  }
+  .header-ctn{
+    width: 100%;
+    padding: 1.6rem;
+    position: relative;
+  }
+  .menu-icon-div{
+    display: block;
+  }
+  nav{
+    /* display: none; */
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 4rem 0;
+    background-color: var(--ulearn-white);
+    transform: translateY(-150%);
+  }
+  nav > ul{
+    flex-direction: column;
   }
 }
 
